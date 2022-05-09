@@ -29,13 +29,14 @@ if (arr3_length > 5) {
 
 //Task 5
 let arr5 = [1, 2, 'hello', 24, 'world', undefined, null, 'error', 22]
-let filteredArr5 = arr2.filter(arr5 => arr5 > 0);
+let filteredArr5 = arr5.filter(arr5 => arr5 > 0);
 
 if (filteredArr5 > 5) {
     console.log('good');
 } else {
     console.log('bad');
 }
+
 
 
 
