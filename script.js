@@ -26,7 +26,6 @@ if (filteredArr3 >= 5) {
 } else {
     console.log('bad');
 }
-console.log(filteredArr3);
 
 //Task 5
 let arr5 = [1, 2, 'hello', 24, 'world', undefined, null, 'error', 22]
