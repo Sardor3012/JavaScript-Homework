@@ -19,13 +19,14 @@ console.log(filteredArr2);
 
 //Task 3
 let arr3 = [1, 2, 'hello', 24, 'world', undefined, null, 'error', 22]
-let arr3_length = arr3.length
+let filteredArr3 = arr3.filter(arr3 => arr3 > 0);
 
-if (arr3_length > 5) {
+if (filteredArr3 >= 5) {
     console.log('good');
 } else {
     console.log('bad');
 }
+console.log(filteredArr3);
 
 //Task 5
 let arr5 = [1, 2, 'hello', 24, 'world', undefined, null, 'error', 22]
