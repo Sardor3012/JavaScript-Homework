@@ -25,7 +25,7 @@ let arr = [
     },
     {
         name: 'pelmeshki',
-        price: 22000
+        price: 22000,
     },
     {
         name: 'vodka',
@@ -48,10 +48,12 @@ let ask = prompt('Что вы хотите найти?')
 let filtered = arr.filter(item => {
     let val = arr.includes(ask)
 
-    if (val === arr.name) {
+    if (val === arr) {
         alert(arr.name)
     } else {
-        alert('По вашему запросу ничего не найдено')
+        alert ('по вашему запросу ничего не найдено')
     }
 })
+
+
 
