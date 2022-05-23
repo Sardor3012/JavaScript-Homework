@@ -1,59 +1,80 @@
 let arr = [
-    {
-        name: 'moloko',
-        price: 10000
+    {   
+        name: 'tesla S',
+        comp: 'Tesla',
+        price: 30000,
+        color: "white",
+        engine: 2.4
     },
-    {
-        name: 'shokolad',
-        price: 5400
+    {   
+        name: 'audi TT',
+        comp: 'volkswagen',
+        color: "yellow",
+        price: 44000,
+        engine: 1.8
     },
-    {
-        name: 'water',
-        price: 4000
+    {   
+        name: 'maserati',
+        comp: 'stellantis',
+        color: "white",
+        price: 50000,
+        engine: 4.7
     },
-    {
-        name: 'coca cola',
-        price: 9000
+    {   
+        name: 'tesla X',
+        comp: 'Tesla',
+        price: 45000,
+        color: "black",
+        engine: 2.4
     },
-    {
-        name: 'chocotella',
-        price: 20000
+    {   
+        name: 'Mercedes Maybach',
+        comp: 'Mercedes',
+        color: "black",
+        price: 180000,
+        engine: 3.2    
     },
-    {
-        name: 'chips',
-        price: 17000
+    {   
+        name: 'BMW I8',
+        comp: 'bmw',
+        color: "blue",
+        price: 250000,
+        engine: 4.7
     },
-    {
-        name: 'pelmeshki',
-        price: 22000,
+    {   
+        name: 'Bugatti Chiron',
+        comp: 'Bugatti',
+        price: 100000,
+        color: "blue",
+        engine: 2.9
     },
-    {
-        name: 'vodka',
-        price: 55000
+    {   name: 'Supra',
+        comp: 'Tayota',
+        color: "black",
+        price: 90000,
+        engine: 3.0    
     },
-    {
-        name: 'shorts',
-        price: 50000
+    {   
+        name: 'McClaren',
+        comp: 'Claren',
+        color: "gold",
+        price: 250000,
+        engine: 5.0
     },
-    {
-        name: 'parlament',
-        price: 16000
-    },
-    {
-        name: 'aybon gold',
-        price: 10000
-    }
 ]
-let ask = prompt('Что вы хотите найти?')
-let filtered = arr.filter(item => {
-    let val = arr.includes(ask)
 
-    if (val === arr) {
-        alert(arr.name)
-    } else {
-        alert ('по вашему запросу ничего не найдено')
+let clientQuery = {
+    name: prompt('Введите название машины')
+}
+
+arr.filter(item => {
+    if (item.name.toLowerCase() === clientQuery.name.toLowerCase()) {
+        document.write(`
+            name: ${item.name}, <br>
+            comp: ${item.comp}, <br>
+            color: ${item.color}, <br>
+            price: ${item.price}, <br>
+            engine: ${item.engine}
+        `)
     }
 })
-
-
-
