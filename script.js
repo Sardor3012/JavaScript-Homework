@@ -1,3 +1,60 @@
+// let arr = [
+//     {
+//         name: 'milk',
+//         type: 'milk'
+//     },
+//     {
+//         name: 'govyadina',
+//         type: 'meat'
+//     },
+//     {
+//         name: 'tvorog',
+//         type: 'milk'
+//     },
+//     {
+//         name: 'apple',
+//         type: 'fruit'
+//     },
+//     {
+//         name: 'baranina',
+//         type: 'meat'
+//     },
+//     {
+//         name: 'yogurt',
+//         type: 'milk'
+//     },
+//     {
+//         name: 'banana',
+//         type: 'fruit'
+//     }
+// ]       
+
+// let categories = [
+//     {
+//         type: 'milk',
+//         count: 0,
+//         price: 10000
+//     },
+//     {
+//         type: 'fruit',
+//         count: 0,
+//         price: 6000
+//     },
+//     {
+//         type: 'meat',
+//         count: 0,
+//         price: 80000
+//     },
+// ]
+// for(let item of arr) {
+//     for(let item2 of categories){
+//         if (item.type === item2.type) {
+//             item2.count++
+//         }
+//     }
+// }
+// console.log(categories);
+
 let arr = [
     {
         id: Math.random(),
@@ -127,8 +184,13 @@ arr.filter(item => {
     faculity_arr.push(item.info.faculity)
 })
 
-if (faculity_arr === categories) {
-    faculity_arr.push(categories.count)
-} else {
-    console.log('Error 404');
+for(let item of arr) {
+    for(let item2 of categories){
+        if (item.info.faculity === item2.course) {
+            item2.count++
+        }
+    }
 }
+
+console.log(categories);
+
