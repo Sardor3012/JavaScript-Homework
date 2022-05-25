@@ -1,80 +1,134 @@
 let arr = [
-    {   
-        name: 'tesla S',
-        comp: 'Tesla',
-        price: 30000,
-        color: "white",
-        engine: 2.4
+    {
+        id: Math.random(),
+        name: 'Timur',
+        info: {
+            school: '235',
+            faculity: 'SMM'
+        },
     },
-    {   
-        name: 'audi TT',
-        comp: 'volkswagen',
-        color: "yellow",
-        price: 44000,
-        engine: 1.8
+    {
+        id: Math.random(),
+        name: 'Imran',
+        info: {
+            school: 'ne izvestno',
+            faculity: 'programming'
+        },
     },
-    {   
-        name: 'maserati',
-        comp: 'stellantis',
-        color: "white",
-        price: 50000,
-        engine: 4.7
+    {
+        id: Math.random(),
+        name: 'Aminjon',
+        info: {
+            school: '444',
+            faculity: 'Dizayn'
+        },
     },
-    {   
-        name: 'tesla X',
-        comp: 'Tesla',
-        price: 45000,
-        color: "black",
-        engine: 2.4
+    {
+        id: Math.random(),
+        name: 'Maxmud',
+        info: {
+            school: '777',
+            faculity: '3dsmax'
+        },
     },
-    {   
-        name: 'Mercedes Maybach',
-        comp: 'Mercedes',
-        color: "black",
-        price: 180000,
-        engine: 3.2    
+    {
+        id: Math.random(),
+        name: 'Muxammad',
+        info: {
+            school: '5555',
+            faculity: 'Backend'
+        },
     },
-    {   
-        name: 'BMW I8',
-        comp: 'bmw',
-        color: "blue",
-        price: 250000,
-        engine: 4.7
+    {
+        id: Math.random(),
+        name: 'Timur',
+        info: {
+            school: '235',
+            faculity: 'SMM'
+        },
     },
-    {   
-        name: 'Bugatti Chiron',
-        comp: 'Bugatti',
-        price: 100000,
-        color: "blue",
-        engine: 2.9
+    {
+        id: Math.random(),
+        name: 'Imran',
+        info: {
+            school: 'ne izvestno',
+            faculity: 'programming'
+        },
     },
-    {   name: 'Supra',
-        comp: 'Tayota',
-        color: "black",
-        price: 90000,
-        engine: 3.0    
+    {
+        id: Math.random(),
+        name: 'Aminjon',
+        info: {
+            school: '444',
+            faculity: 'Dizayn'
+        },
     },
-    {   
-        name: 'McClaren',
-        comp: 'Claren',
-        color: "gold",
-        price: 250000,
-        engine: 5.0
+    {
+        id: Math.random(),
+        name: 'Maxmud',
+        info: {
+            school: '777',
+            faculity: '3dsmax'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Maxmud',
+        info: {
+            school: '777',
+            faculity: '3dsmax'
+        },
+    },
+    {
+        id: Math.random(),
+        name: 'Muxammad',
+        info: {
+            school: '5555',
+            faculity: 'Backend'
+        },
     },
 ]
 
-let clientQuery = {
-    name: prompt('Введите название машины')
-}
+let categories = [
+    {
+        course: ' SMM',
+        count: 0
+    },
+    {
+        course: 'PROGRAMMING',
+        count: 0
+    },
+    {
+        course: '     3DSMAX',
+        count: 0
+    },
+    {
+        course: ' DIZAYN',
+        count: 0
+    },
+    {       
+        course: '   BACKEND',
+        count: 0
+    },
+]
+let faculity_arr = []
+
+categories.filter(item => {
+    item.course = item.course.trim()
+    item.course = item.course.toLowerCase()
+})
 
 arr.filter(item => {
-    if (item.name.toLowerCase() === clientQuery.name.toLowerCase()) {
-        document.write(`
-            name: ${item.name}, <br>
-            comp: ${item.comp}, <br>
-            color: ${item.color}, <br>
-            price: ${item.price}, <br>
-            engine: ${item.engine}
-        `)
-    }
+    item.info.faculity =  item.info.faculity.trim()
+    item.info.faculity =  item.info.faculity.toLowerCase()
 })
+
+arr.filter(item => {
+    faculity_arr.push(item.info.faculity)
+})
+
+if (faculity_arr === categories) {
+    faculity_arr.push(categories.count)
+} else {
+    console.log('Error 404');
+}
