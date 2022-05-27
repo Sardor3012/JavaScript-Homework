@@ -1,140 +1,30 @@
-
-let arr = [
-    {
-        id: Math.random(),
-        name: 'Timur',
-        info: {
-            school: '235',
-            faculity: 'SMM'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Imran',
-        info: {
-            school: 'ne izvestno',
-            faculity: 'programming'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Aminjon',
-        info: {
-            school: '444',
-            faculity: 'Dizayn'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Maxmud',
-        info: {
-            school: '777',
-            faculity: '3dsmax'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Muxammad',
-        info: {
-            school: '5555',
-            faculity: 'Backend'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Timur',
-        info: {
-            school: '235',
-            faculity: 'SMM'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Imran',
-        info: {
-            school: 'ne izvestno',
-            faculity: 'programming'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Aminjon',
-        info: {
-            school: '444',
-            faculity: 'Dizayn'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Maxmud',
-        info: {
-            school: '777',
-            faculity: '3dsmax'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Maxmud',
-        info: {
-            school: '777',
-            faculity: '3dsmax'
-        },
-    },
-    {
-        id: Math.random(),
-        name: 'Muxammad',
-        info: {
-            school: '5555',
-            faculity: 'Backend'
-        },
-    },
-]
+let arr = [12, 12, 'hello', true, {}, null, 'str']
 
 let categories = [
     {
-        course: ' SMM',
+        type: "string",
         count: 0
     },
     {
-        course: 'PROGRAMMING',
+        type: "number",
         count: 0
     },
     {
-        course: '     3DSMAX',
+        type: "boolean",
         count: 0
     },
     {
-        course: ' DIZAYN',
-        count: 0
-    },
-    {       
-        course: '   BACKEND',
+        type: "object",
         count: 0
     },
 ]
-let faculity_arr = []
-
-categories.filter(item => {
-    item.course = item.course.trim()
-    item.course = item.course.toLowerCase()
-})
-
-arr.filter(item => {
-    item.info.faculity =  item.info.faculity.trim()
-    item.info.faculity =  item.info.faculity.toLowerCase()
-})
-
-arr.filter(item => {
-    faculity_arr.push(item.info.faculity)
-})
 
 for(let item of arr) {
-    for(let item2 of categories){
-        if (item.info.faculity === item2.course) {
+    for(let item2 of categories) {
+        if (item === item2.type) {
             item2.count++
         }
     }
 }
 
 console.log(categories);
-
