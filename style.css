@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #333333;
+}
+.links{
+    display: flex;
+    gap: 50px;
+}
+.links a{
+    color: #B3B3B3;
+}
+.links a:hover{
+    color: white;
+}
+.iphone-model{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 420px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.price-span{
+    color: #1D1D1F;
+    font-size: 20px;
+}
+.carrier-details{
+    width: 1180px;
+    height: 120px;
+
+    display: flex;
+    gap: 80px;
+    margin-left: 370px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #FBFBFD;
+    border-radius: 15px;
+}
+.dealers-box{
+    display: flex;
+    gap: 40px;
+}
+.main-content{
+    display: flex;
+    gap: 80px;
+}
+.iphone-bar{
+    margin-left: 300px;
+}
+.iphone-img{
+    position: sticky;
+    top: 0;
+}
+.iphone-options{
+    margin-top: 100px;
+}
+.new-txt{
+    color: #BF4800;
+    padding: 0px 0px 11px;
+}
+.buy-text{
+    padding: 0px 0px 11px;
+}
+.trade-txt{
+    font-size: 21px;
+    padding: 0px 0px 11px;
+}
+.trade-in-a{
+    font-size: 21px;
+    color: #0066CC;
+    padding: 0px 0px 11px;
+}
+.choose-model{
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+}
+.choose-model-txt{
+    font-size: 21px;
+    padding: 0px 0px 11px;
+}
+.btn-model-1{
+    width: 500px;
+    height: 130px;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 2px solid #D2D2D7;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+.btn1-text{
+    font-size: 21px;
+}
+.btn-model-2{
+    width: 500px;
+    height: 130px;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 2px solid #D2D2D7;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+.btn2-text{
+    font-size: 21px;
+}
+.choose-finish{
+    font-size: 21px;
+    padding: 25px 0px 11px;
+}
+.color-buttons{
+    width: 500px;
+}
+.color-btn{
+    width: 240px;
+    height: 140px;
+
+    border: 2px solid #D2D2D7;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.color-btn2{
+    width: 240px;
+    height: 140px;
+
+    border: 2px solid #D2D2D7;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.color-btn3{
+    width: 240px;
+    height: 140px;
+
+    border: 2px solid #D2D2D7;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.color-btn4{
+    width: 240px;
+    height: 140px;
+
+    border: 2px solid #D2D2D7;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.color-btn5{
+    width: 240px;
+    height: 140px;
+
+    border: 2px solid #D2D2D7;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.color-txt{
+    font-size: 17px;
+}
+.choose-capacity{
+    font-size: 21px;
+    padding: 25px 0px 11px;
+}
+.capacity-buttons{
+    width: 500px;
+}
+.capacity-btn{
+    width: 240px;
+    height: 140px;
+
+    border: 2px solid #D2D2D7;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.connect-carrier-buttons{
+    width: 500px;
+}
+.carrier-btn{
+    width: 240px;
+    height: 140px;
+
+    border: 2px solid #D2D2D7;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #333333;
+    margin-top: 50px;
+}
+.iphone-13-4{
+    position: sticky;
+    top: 0;
+    display: none;
+    width: 600px;
+    height: 680px;
+}
+.iphone-13-4-max{
+    position: sticky;
+    top: 0;
+    display: none;
+    width: 600px;
+    height: 680px;
+}
+.active{
+    border: 2px solid #0066CC;
+}
+.pro13-green{
+    position: sticky;
+    top: 0;
+    display: none;
+}
+.pro13-silver{
+    position: sticky;
+    top: 0;
+    display: none;
+}
+.pro13-gold{
+    position: sticky;
+    top: 0;
+    display: none;
+}
+.pro13-graphite{
+    position: sticky;
+    top: 0;
+    display: none;
+}
+.pro13-blue{
+    position: sticky;
+    top: 0;
+    display: none;
+}
